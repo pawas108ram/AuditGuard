@@ -1,15 +1,27 @@
 import React from 'react'
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom'
+import About from '../pages/About'
+import FAQs from '../pages/FAQs'
+import Home from '../pages/Home'
+import Services from '../pages/Services'
  
-
 
 const Navbar = () => {
   return (
-    <div>
-      <div>HOME</div>
-      <div>ABOUT</div>
-      <div>SERVICES</div>
-      <div>FAQs</div>
-    </div>
+    <nav>
+      <li>
+        <Link to="/">HOME</Link>
+      </li>
+      <li>
+        <Link to="/about">ABOUT</Link>
+      </li>
+      <li>
+        <Link to="/services">SERVICES</Link>
+      </li>
+      <li>
+        <Link to="/faqs">FAQS</Link>
+      </li>
+  </nav>
   )
 }
 
